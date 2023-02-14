@@ -1,0 +1,45 @@
+.basket_btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 90px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.delete_from_basket_btn {
+  @extend .basket_btn;
+  background-color: #00b177;
+  padding: 10px 56px;
+}
+
+.add_to_basket {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f5f5f7;
+  border-radius: 90px;
+  padding-right: 15px;
+}
+
+.add_to_basket_btn {
+  @extend .basket_btn;
+  background-color: #4056a1;
+  padding: 10px 20px;
+}
+
+.add_to_basket_count {
+  font-size: 12px;
+}
+
+.add_to_basket_count_btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 0;
+  background-color: #f5f5f7;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  height: 10px;
+}

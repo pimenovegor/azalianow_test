@@ -1,0 +1,29 @@
+$sizeMobile: 640px;
+$sizeTablet: 1080px;
+$sizeLaptop: 1439px;
+
+.header {
+  position: relative;
+  background-color: #4056a1;
+  border-radius: 7px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  margin-bottom: 70px;
+
+  @media (max-width: $sizeMobile) {
+    justify-content: space-between;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #4056a1;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}

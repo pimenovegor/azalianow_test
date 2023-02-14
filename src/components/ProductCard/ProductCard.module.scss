@@ -1,0 +1,87 @@
+$grey: #999999;
+$sizeMobile: 640px;
+$sizeTablet: 1080px;
+$sizeLaptop: 1439px;
+
+.card {
+  border: 1px solid #f5f5f7;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: 400;
+  width: calc((100% - 90px) / 4);
+
+  @media (max-width: $sizeLaptop) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media (max-width: $sizeTablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media (max-width: $sizeMobile) {
+    width: 100%;
+  }
+}
+
+.popular {
+  min-height: 24px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  font-size: 12px;
+  color: $grey;
+}
+
+.rate {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.review {
+  color: $grey;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.title {
+  align-self: flex-start;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.price {
+  margin-top: 10px;
+  align-self: flex-start;
+  font-weight: 00;
+  font-size: 22px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.price_sign {
+  margin: 0 0 3px 5px;
+  font-size: 13px;
+  font-weight: 400;
+  color: $grey;
+}
+
+.btns_row {
+  @extend .row;
+  margin-top: 10px;
+}

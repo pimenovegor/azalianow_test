@@ -1,0 +1,22 @@
+.like_btn {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.add_to_liked_btn {
+  @extend .like_btn;
+  border: 1px solid #f5f5f7;
+}
+
+.delete_from_liked_btn {
+  @extend .like_btn;
+  border: 1px solid #ff0000;
+}
